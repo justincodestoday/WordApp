@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    tools:context=".ui.AddWordFragment">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/blue_900"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="Add a New Word"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWord"
+        style="@style/Word.Header.Black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Enter a word here:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+    <EditText
+        android:id="@+id/etWord"
+        style="@style/Edit.Text.Fill"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/edit_text"
+        android:gravity="top"
+        android:hint="Word"
+        android:inputType="text"
+        android:textColorHint="@color/gray_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWord" />
+
+    <TextView
+        android:id="@+id/tvMeaning"
+        style="@style/Word.Header.Black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Enter meaning(s) here:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etWord" />
+
+    <EditText
+        android:id="@+id/etMeaning"
+        style="@style/Edit.Text.MultiLine.Fill"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/edit_text"
+        android:gravity="top"
+        android:hint="Meaning"
+        android:inputType="textMultiLine"
+        android:maxLines="4"
+        android:minLines="4"
+        android:textColorHint="@color/gray_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMeaning" />
+
+    <TextView
+        android:id="@+id/tvSynonym"
+        style="@style/Word.Header.Black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Enter synonym(s) here:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etMeaning" />
+
+    <EditText
+        android:id="@+id/etSynonym"
+        style="@style/Edit.Text.MultiLine.Fill"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text"
+        android:gravity="top"
+        android:hint="Synonym"
+        android:inputType="textMultiLine"
+        android:maxLines="2"
+        android:minLines="2"
+        android:textColorHint="@color/gray_500"
+        app:layout_constraintBottom_toTopOf="@id/tvExample"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSynonym" />
+
+    <TextView
+        android:id="@+id/tvExample"
+        style="@style/Word.Header.Black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Enter example(s) here:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etSynonym" />
+
+    <EditText
+        android:id="@+id/etExample"
+        style="@style/Edit.Text.MultiLine.Fill"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text"
+        android:gravity="top"
+        android:hint="Example"
+        android:inputType="textMultiLine"
+        android:textColorHint="@color/gray_500"
+        app:layout_constraintBottom_toTopOf="@id/btnSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvExample" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/blue_900"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

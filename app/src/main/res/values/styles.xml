@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Word.Text.Base" parent="">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Word.Header.Black" parent="Word.Text.Base">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Word.Body.Black" parent="Word.Text.Base">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Word.Header.Blue" parent="Word.Header.Black">
+        <item name="android:textColor">@color/dark_blue_900</item>
+    </style>
+
+    <style name="Word.Body.Blue" parent="Word.Body.Black">
+        <item name="android:textColor">@color/dark_blue_900</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Word.Header.White" parent="Word.Header.Black">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Word.Body.White" parent="Word.Body.Black">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Word.Main" parent="Word.Text.Base">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/dark_blue_900</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Word.Secondary" parent="Word.Text.Base">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Word.Tertiary" parent="Word.Text.Base">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Edit.Text.Base" parent="android:Widget.EditText">
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Edit.Text.MultiLine.Base" parent="android:Widget.EditText">
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Edit.Text.Search" parent="Edit.Text.Base">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="Edit.Text.Fill" parent="Edit.Text.Base">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/dark_blue_900</item>
+        <item name="android:textColorHint">@color/dark_blue_900</item>
+    </style>
+
+    <style name="Edit.Text.MultiLine.Fill" parent="Edit.Text.MultiLine.Base">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/dark_blue_900</item>
+        <item name="android:textColorHint">@color/dark_blue_900</item>
+    </style>
+
+    <style name="Confirm.AlertDialog" parent="@style/ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarPositiveButtonStyle">@style/Confirm.AlertDialog.Positive.Button</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Cancel.AlertDialog.Negative.Button</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/Base.AlertDialog.Title</item>
+    </style>
+
+    <style name="Confirm2.AlertDialog" parent="@style/ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarPositiveButtonStyle">@style/Confirm2.AlertDialog.Positive.Button</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Cancel.AlertDialog.Negative.Button</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/Base.AlertDialog.Title</item>
+    </style>
+
+    <style name="Delete.AlertDialog" parent="@style/ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarPositiveButtonStyle">@style/Delete.AlertDialog.Positive.Button</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Cancel.AlertDialog.Negative.Button</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/Base.AlertDialog.Title</item>
+    </style>
+
+    <style name="Custom.AlertDialog" parent="@style/ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="materialAlertDialogTitleTextStyle">@style/Base.AlertDialog.Title</item>
+    </style>
+
+
+    <style name="Base.AlertDialog.Title" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Confirm.AlertDialog.Positive.Button" parent="ShapeAppearanceOverlay.Material3.Button">
+        <item name="backgroundTint">@color/green_900</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="Confirm2.AlertDialog.Positive.Button" parent="ShapeAppearanceOverlay.Material3.Button">
+        <item name="backgroundTint">@color/yellow_500</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="Delete.AlertDialog.Positive.Button" parent="ShapeAppearanceOverlay.Material3.Button">
+        <item name="backgroundTint">@color/red_500</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="Cancel.AlertDialog.Negative.Button" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/gray_900</item>
+    </style>
+</resources>

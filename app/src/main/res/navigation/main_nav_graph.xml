@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.wordapp.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_addWordFragment"
+            app:destination="@id/addWordFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_wordFragment"
+            app:destination="@id/wordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addWordFragment"
+        android:name="com.example.wordapp.ui.AddWordFragment"
+        android:label="fragment_add_edit_word"
+        tools:layout="@layout/fragment_add_edit_word" />
+    <fragment
+        android:id="@+id/editWordFragment"
+        android:name="com.example.wordapp.ui.EditWordFragment"
+        android:label="EditWordFragment"
+        tools:layout="@layout/fragment_add_edit_word">
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordFragment"
+        android:name="com.example.wordapp.ui.WordFragment"
+        android:label="fragment_word"
+        tools:layout="@layout/fragment_word">
+        <action
+            android:id="@+id/action_wordFragment_to_editWordFragment"
+            app:destination="@id/editWordFragment" />
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
+</navigation>
